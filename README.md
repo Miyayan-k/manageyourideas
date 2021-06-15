@@ -4,6 +4,7 @@
 | name   | string     | null: false, unique: true |
 
 ### Association
+- has_many :ideas
 
 ## ideasテーブル
 | Column      | Type   | Options                        |
@@ -11,3 +12,4 @@
 | body        | text   | null: false                    |
 
 ### Association
+- belongs_to :category
