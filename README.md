@@ -7,9 +7,9 @@
 - has_many :ideas
 
 ## ideasテーブル
-| Column      | Type   | Options                        |
-| category_id | bigint | null: false, foreign_key: true |
-| body        | text   | null: false                    |
+| Column   | Type       | Options                        |
+| category | references | null: false, foreign_key: true |
+| body     | text       | null: false                    |
 
 ### Association
 - belongs_to :category
