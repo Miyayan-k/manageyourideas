@@ -2,12 +2,6 @@ module Api
   module Ver1
     class IdeasController < ApplicationController
       def index
-        @ideas = Idea.all
-        render json: @ideas
-      end
-
-      def new
-        @idea_category = IdeaCategory.new
       end
 
       def create
@@ -22,7 +16,7 @@ module Api
 
       private
       def idea_params
-        params.permit(:category_name, :body, :idea )
+        params.permit(:category_name, :body )
       end
     end
   end
