@@ -84,7 +84,6 @@ RSpec.describe 'Ideas', type: :request do
         @idea_category.save
         # Fakerでは日本語を生成しないため、日本語のカテゴリー名でリクエストを送信する。
         get '/api/ver1/ideas', params: { category_name: '存在しないカテゴリー名' }
-        json = JSON.parse(response.body)
         expect(response.status).to eq(404)
       end
     end
