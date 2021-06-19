@@ -65,6 +65,9 @@ API確認ツール: [Postman](https://web.postman.co/)
 
 
 # テーブル設計
+## ER図
+[![Image from Gyazo](https://i.gyazo.com/ca3d5d772b4bed16dae7c589c33eb18f.png)](https://gyazo.com/ca3d5d772b4bed16dae7c589c33eb18f)
+
 ## categoriesテーブル
 | Column | Type       | Options                   |
 | name   | string     | null: false, unique: true |
