@@ -8,6 +8,7 @@
 ## バージョン
 本APIはバージョン管理をしています。  
 2021年6月19日　Version 1
+URIパターンは*/api/ver1/ideas*にて利用が可能です。
 
 # 環境
 OS: MacOS Big Sur ver.11.2  
@@ -71,6 +72,7 @@ API確認ツール: [Postman](https://web.postman.co/)
 ## categoriesテーブル
 
 | Column | Type       | Options                   |
+|--------|------------|---------------------------|
 | name   | string     | null: false, unique: true |
 
 ### Association
@@ -79,6 +81,7 @@ API確認ツール: [Postman](https://web.postman.co/)
 ## ideasテーブル
 
 | Column   | Type       | Options                        |
+|----------|------------|--------------------------------|
 | category | references | null: false, foreign_key: true |
 | body     | text       | null: false                    |
 
