@@ -7,8 +7,8 @@
 
 ## バージョン
 本APIはバージョン管理をしています。  
-2021年6月19日　Version 1
-URIパターンは*/api/ver1/ideas*にて利用が可能です。
+2021年6月19日　Version 1  
+URIパターンは`/api/ver1/ideas`にて利用が可能です。
 
 # 環境
 OS: MacOS Big Sur ver.11.2  
