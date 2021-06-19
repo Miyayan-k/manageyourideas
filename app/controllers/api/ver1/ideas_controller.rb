@@ -10,7 +10,7 @@ module Api
           @category = Category.find_by(name: params[:category_name])
           # 登録されているカテゴリーのリクエストであるか否か
           if @category.nil?
-            render json: { status: 404, message: 'お探しのカテゴリー名に該当するアイデアは見つかりませんでした。' }
+            render status: 404, json: { status: 404, message: 'お探しのカテゴリー名に該当するアイデアは見つかりませんでした。' }
           else
             @ideas = Idea.joins(:category).where(category_id: @category.id).select('ideas.id, name as category_name, body')
             render json: @ideas
