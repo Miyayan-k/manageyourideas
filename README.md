@@ -69,6 +69,7 @@ API確認ツール: [Postman](https://web.postman.co/)
 [![Image from Gyazo](https://i.gyazo.com/ca3d5d772b4bed16dae7c589c33eb18f.png)](https://gyazo.com/ca3d5d772b4bed16dae7c589c33eb18f)
 
 ## categoriesテーブル
+
 | Column | Type       | Options                   |
 | name   | string     | null: false, unique: true |
 
@@ -76,6 +77,7 @@ API確認ツール: [Postman](https://web.postman.co/)
 - has_many :ideas
 
 ## ideasテーブル
+
 | Column   | Type       | Options                        |
 | category | references | null: false, foreign_key: true |
 | body     | text       | null: false                    |
