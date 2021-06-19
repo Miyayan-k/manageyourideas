@@ -35,6 +35,7 @@ module Api
       end
 
       private
+
       def idea_params
         params.permit(:category_name, :body)
       end
